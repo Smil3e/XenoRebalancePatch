@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName="XMT_Ovomorph"]/building</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="XMT_Ovomorph"]/building</xpath>
+					<value>
+						<combatPower>45</combatPower>
+					</value>
+			</li>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName="XMT_Ovomorph"]/statBases/MarketValue</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="XMT_Ovomorph"]/statBases/MarketValue</xpath>
+					<value>
+					<MarketValue>1000</MarketValue>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>XenoRebalancePatch</name>
+    <author>NameJeff</author>
+    <url></url>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+    <packageId>NJ2.jejs</packageId>
+    <description>Rebalance Xenomorphs for hybrid colonies</description>
+    <modDependencies>
+        <li>
+            <packageId>niz.xenomorphtype</packageId>
+            <displayName>Alien | Rimworld</displayName>
+            <downloadUrl>https://github.com/nighzmarquls/Alien-Rimworld</downloadUrl>
+        </li>
+    </modDependencies>
+        <loadAfter>
+            <li>niz.xenomorphtype</li>
+        </loadAfter>
+    <incompatibleWith>
+    
+    </incompatibleWith>
+</ModMetaData>
