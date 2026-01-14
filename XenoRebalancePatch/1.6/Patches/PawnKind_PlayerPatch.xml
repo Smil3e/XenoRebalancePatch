@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/PawnKindDef[@Name="BaseStarbeast"]/combatPower</xpath>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/PawnKindDef[defName="XMT_StarbeastKind"]/combatPower</xpath>
+        <value>
+          <combatPower>200</combatPower>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/PawnKindDef[defName="XMT_RoyaltyKind"]/combatPower</xpath>
+        <value>
+          <combatPower>800</combatPower>
+        </value>
+      </li>
+
+    </operations>
+  </Operation>
+
+   <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[defName="XMT_Starbeast_AlienRace"]/statBases/MarketValue</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="XMT_Starbeast_AlienRace"]/statBases/MarketValue</xpath>
+        <value>
+          <MarketValue>8700</MarketValue>
+        </value>
+      </li>
+
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[defName="XMT_Royal_AlienRace"]/statBases/MarketValue</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="XMT_Royal_AlienRace"]/statBases/MarketValue</xpath>
+        <value>
+          <MarketValue>11000</MarketValue>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+</Patch>
